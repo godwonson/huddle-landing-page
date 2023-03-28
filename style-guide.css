@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+}
+
+.nav-container {
+    padding: 40px 52px;
+}
+
+.container {
+    display: flex;
+    padding:  30px 60px;
+}
+
+.left-section {
+    margin-right: 40px;
+}
+
+.right-section {
+    padding: 50px 0px;
+}
+
+.container .right-section h1 {
+    padding-bottom: 10px;
+    color: #fff;
+    line-height: 1.4;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .main-text p {
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    line-height: 1.4;
+    font-size: 1.45rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.click-btn {
+    padding-top:  20px;    
+}
+
+.click-btn button {
+    padding:  13px 60px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 16px;
+    color:  hsl(257, 40%, 49%);
+    box-shadow: 0px 4px 20px 0px #222
+}
+
+.click-btn button:hover {
+    background-color:  hsl(300, 69%, 71%);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+/* Media Querry Section */
+@media screen and (max-width: 1440px) {
+     .container  .main-text p {
+        font-size: 1.25rem;
+    }
+} 
+
+@media screen and (max-width: 1300px) and (min-width: 1100px) {
+    .nav-container img {
+        width: 250px;
+    }
+
+    .left-section img {
+        width: 620px;
+    }
+
+    .container {
+        padding: 0px 40px;
+    }
+
+    .container .right-section h1 {
+        font-size: 2.1rem;
+    }
+
+    .container .main-text p {
+        font-size: 1.1rem;
+    }
+}
+
+ @media screen and (max-width: 1100px) and (min-width: 912px) { 
+    .nav-container img {
+        width: 150px;
+    }
+
+    .container {
+        padding: 0px 25px;
+    }
+    
+    .left-section img {
+        width: 450px;
+    }
+
+    .container .right-section h1 {
+        font-size: 1.7rem;
+    }
+    
+    .container .right-section p {
+        font-size: 0.80rem;
+    }
+
+    .click-btn button {
+        padding:  12px 30px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 912px) and (min-width: 768px) {
+    .nav-container {
+        padding: 20px ;
+    }
+
+    .nav-container img {
+        width: 120px;
+    }
+
+    .container {
+        padding:  0 20px;
+    }
+
+    .container .left-section img {
+        width: 370px;
+    }
+
+    .container .right-section h1 {
+        font-size: 1.7rem;
+    }
+
+    .container .main-text p {
+        font-size: 1.2rem;
+    }
+
+    .right-section {
+        padding-top: 20px;
+    }
+
+    .click-btn button {
+        padding:  10px 25px;
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 540px) {
+    .nav-container {
+        padding: 20px 0px 0px 20px;
+    }
+
+    .nav-container img {
+        width: 100px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .container .left-section img {
+        width: 270px;
+    } 
+
+    .left-section {
+        margin-right: 0px;
+    }
+
+    .right-section {
+        padding: 15px;
+    }
+
+    .container .right-section h1 {
+        font-size: 1rem;
+        padding-bottom: 0px;
+    }
+
+    .container .main-text p {
+        font-size: 0.50rem;
+    }
+
+    .click-btn {
+        padding-top: 20px;
+    }
+
+    .click-btn button {
+        padding: 8px 20px;
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 540px) and (min-width: 440px) {
+    body {
+        background-image: url(/images/bg-mobile.svg);
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+
+    .nav-container {
+        padding: 35px 0px 60px 35px;
+    }
+
+    .nav-container img {
+        width: 150px;
+        
+    }
+
+    .container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .container .left-section img {
+        width: 350px;
+        margin-left: 20px;
+    }
+
+    .container .right-section {
+        padding: 60px 35px 25px 35px;
+    }
+
+    .container .right-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .right-section .main-text p {
+        font-size: 0.90rem;
+    }
+
+    .click-btn button {
+        padding: 12px 80px;
+        font-size: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 440px) and (min-width: 375px) {   
+    body {
+        background-image: url(/images/bg-mobile.svg);
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+        
+    .nav-container {
+        padding: 30px ;
+    }
+
+    .nav-container img {
+        width: 120px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .container .left-section img {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .container .right-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .container .main-text p {
+        font-size: 1.rem;
+        line-height: 26px;
+    }
+
+    .click-btn button {
+        padding: 10px 60px;
+        font-size: 14px;
+    }
+} 
+
+
+
+
+
+
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 600
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/) */
